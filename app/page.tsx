@@ -13,7 +13,7 @@ const clubs = [
 ];
 
 export default function ClubPage() {
-  const [expanded, setExpanded] = useState(null);
+  const [expanded, setExpanded] = useState<number | null>(null);
   const [search, setSearch] = useState("");
 
   const filteredClubs = clubs.filter((club) =>
